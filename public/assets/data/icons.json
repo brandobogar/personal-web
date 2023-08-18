@@ -1,0 +1,21 @@
+[
+  { "name": "flutter", "src": "/assets/icon/flutter.svg" },
+  { "name": "react", "src": "/assets/icon/react.svg" },
+  { "name": "nextjs", "src": "/assets/icon/nextjs.svg" },
+  { "name": "tensorflow", "src": "/assets/icon/tensorflow.svg" },
+  { "name": "python", "src": "/assets/icon/python.svg" },
+  { "name": "html", "src": "/assets/icon/html.svg" },
+  { "name": "css", "src": "/assets/icon/css.svg" },
+  { "name": "javascript", "src": "/assets/icon/javascript.svg" },
+  { "name": "flask", "src": "/assets/icon/flask.svg" },
+  { "name": "unity", "src": "/assets/icon/unity.svg" },
+  { "name": "blender", "src": "/assets/icon/blender.svg" },
+  { "name": "tailwind", "src": "/assets/icon/tailwind.svg" },
+  { "name": "github", "src": "/assets/icon/github.svg" },
+  { "name": "illustrator", "src": "/assets/icon/illustrator.svg" },
+  { "name": "instagram", "src": "/assets/icon/instagram.svg" },
+  { "name": "linkedin", "src": "/assets/icon/linkedin.svg" },
+  { "name": "photoshop", "src": "/assets/icon/photoshop.svg" },
+  { "name": "linkedin", "src": "/assets/icon/linkedin.svg" },
+  { "name": "twitter", "src": "/assets/icon/twitter.svg" }
+]

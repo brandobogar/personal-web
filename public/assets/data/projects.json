@@ -1,0 +1,59 @@
+[
+  {
+    "topics": "Fullstack",
+    "date": "June, 2021",
+    "name": "Nutmeeg Seed Image Classification",
+    "link": "https://github.com/brandobogar/Nutmeg-Image-Seed-Classification-Using-CNN.git",
+    "bg": "bg-blue-100",
+    "techs": ["python", "flask", "tensorflow"]
+  },
+  {
+    "topics": "Frontend",
+    "date": "January, 2023",
+    "name": "iMessage(Clone)",
+    "link": "https://github.com/brandobogar/imessage_clone.git",
+    "bg": "bg-blue-100",
+    "techs": ["flutter"]
+  },
+  {
+    "topics": "Frontend",
+    "date": "February, 2023",
+    "name": "Portal Inspire(Clone)",
+    "link": "https://github.com/brandobogar/portal-unsrat-clone-.git",
+    "bg": "bg-blue-100",
+    "techs": ["flutter"]
+  },
+
+  {
+    "topics": "Frontend",
+    "date": "April, 2023",
+    "name": "My Portfolio Website version 0.1",
+    "link": "https://github.com/brandobogar/my-web",
+    "bg": "bg-amber-100",
+    "techs": ["nextjs", "tailwind"]
+  },
+  {
+    "topics": "Fullstack",
+    "date": "July, 2023",
+    "name": "Learn-crud using json-server",
+    "link": "https://github.com/brandobogar/learn-crud-using-json-server",
+    "bg": "bg-amber-100",
+    "techs": ["nextjs", "tailwind"]
+  },
+  {
+    "topics": "Fullstack",
+    "date": "July, 2023",
+    "name": "Learn-crud using planet-scale",
+    "link": "https://github.com/brandobogar/learn-crud-using-json-server",
+    "bg": "bg-amber-100",
+    "techs": ["nextjs", "tailwind"]
+  },
+  {
+    "topics": "Game",
+    "date": "November, 2017",
+    "name": "JUMPJUMP",
+    "link": "https://github.com/brandobogar/JUMPJUMP.git",
+    "bg": "bg-amber-200",
+    "techs": ["unity", "blender"]
+  }
+]
