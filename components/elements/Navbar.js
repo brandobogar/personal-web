@@ -122,6 +122,14 @@ export default function Navbar() {
                       Gallery
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="/features/nutmeg-classification"
+                      className="pt-0 text-lg font-normal normal-case btn btn-sm hover:scale-110 btn-ghost dark:hover:text-my-text-dark"
+                    >
+                      Classification
+                    </a>
+                  </li>
                 </ul>
               </details>
             </li>

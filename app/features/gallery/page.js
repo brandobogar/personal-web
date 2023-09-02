@@ -1,4 +1,4 @@
-import Gallery from "@/components/pages/Gallery";
+import Gallery from "@/components/pages/features/Gallery";
 
 import React from "react";
 

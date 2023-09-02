@@ -5,7 +5,7 @@ const mainOptions = {
   perMove: 1,
   gap: "15px",
   pagination: false,
-  height: "20rem",
+  height: "25rem",
   arrows: false,
   autoHeight: true,
   autoWidth: true,

@@ -28,7 +28,7 @@ const ThemeSwitcher = () => {
 
   return (
     <button
-      className="font-normal normal-case btn btn-ghost btn-sm hover:scale-110 "
+      className="text-my-text-light dark:text-my-text-dark hover:scale-110"
       onClick={handleToggle}
     >
       {theme === "light" ? icon.light : icon.dark}

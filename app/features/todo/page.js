@@ -1,4 +1,4 @@
-import Todo from "@/components/pages/Todo";
+import Todo from "@/components/pages/features/Todo";
 
 export const metadata = {
   title: "Todo",
