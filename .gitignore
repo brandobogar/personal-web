@@ -35,4 +35,5 @@ yarn-error.log*
 next-env.d.ts
 /components/boiler
 todo.txt
-/components/elements/color.js
+/components/elements/Color.js
+/cmponents/elements/Head.js
