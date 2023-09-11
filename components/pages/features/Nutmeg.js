@@ -32,10 +32,13 @@ export default function Nutmeg() {
     formData.append("image", image);
 
     try {
-      await fetch("http://127.0.0.1:5000/classification", {
-        method: "POST",
-        body: formData,
-      });
+      await fetch(
+        "https://flask-hello-world-alpha-opal.vercel.app/classification",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
     } catch (error) {
       console.error("Error while sending image:", error);
     }

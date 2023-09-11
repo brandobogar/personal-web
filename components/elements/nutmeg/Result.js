@@ -11,7 +11,9 @@ export const Result = () => {
     setShow(true);
     setLoading(true);
     try {
-      const res = await fetch("http://127.0.0.1:5000/classification");
+      const res = await fetch(
+        "https://flask-hello-world-alpha-opal.vercel.app/classification"
+      );
       if (res.ok) {
         const result = await res.json();
         console.log(typeof result);

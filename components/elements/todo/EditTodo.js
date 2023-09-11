@@ -1,4 +1,5 @@
 "use client";
+import axios from "axios";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -16,24 +17,49 @@ export default function EditTodo(todo) {
   async function handleFormSubmit(e) {
     e.preventDefault();
     setLoading(true);
-    await fetch(
-      `https://64e6fcd8b0fd9648b78f2390.mockapi.io/todo/${Number(todo.id)}`,
-      {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
+    try {
+      await axios.put(
+        `https://64e6fcd8b0fd9648b78f2390.mockapi.io/todo/${todo.id}`,
+        {
           title: updatedTodo,
           isDone: isDone,
-        }),
-      }
-    );
-    setUpdatedTodo("");
-    setLoading(false);
-    setModal(false);
-    router.refresh();
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      setUpdatedTodo("");
+      setLoading(false);
+      setModal(false);
+      router.refresh();
+    } catch (error) {
+      console.log(error);
+    }
   }
+
+  // async function handleFormSubmit(e) {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   await fetch(
+  //     `https://64e6fcd8b0fd9648b78f2390.mockapi.io/todo/${Number(todo.id)}`,
+  //     {
+  //       method: "PUT",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         title: updatedTodo,
+  //         isDone: isDone,
+  //       }),
+  //     }
+  //   );
+  //   setUpdatedTodo("");
+  //   setLoading(false);
+  //   setModal(false);
+  //   router.refresh();
+  // }
 
   return (
     <div>

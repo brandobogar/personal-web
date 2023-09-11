@@ -1,4 +1,5 @@
 "use client";
+import axios from "axios";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -16,20 +17,26 @@ export default function AddTodo() {
   async function handleFormSubmit(e) {
     e.preventDefault();
     setLoading(true);
-    await fetch("https://64e6fcd8b0fd9648b78f2390.mockapi.io/todo", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        title: todo,
-        isDone: isDone,
-      }),
-    });
-    setTodo("");
-    setLoading(false);
-    setModal(false);
-    router.refresh();
+    try {
+      await axios.post(
+        "https://64e6fcd8b0fd9648b78f2390.mockapi.io/todo",
+        {
+          title: todo,
+          isDone: isDone,
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      setTodo("");
+      setLoading(false);
+      setModal(false);
+      router.refresh();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (

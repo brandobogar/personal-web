@@ -3,14 +3,16 @@ import AddTodo from "@/components/elements/todo/AddTodo";
 import TodoList from "@/components/elements/todo/TodoList";
 import DeleteTodo from "@/components/elements/todo/DeleteTodo";
 import EditTodo from "@/components/elements/todo/EditTodo";
+import axios from "axios";
 
 async function getData() {
-  const res = await fetch("https://64e6fcd8b0fd9648b78f2390.mockapi.io/todo", {
-    cache: "no-cache",
-    // next: { revalidate: 360 },
-  });
-  const data = await res.json();
-  return data;
+  const res = await axios.get(
+    "https://64e6fcd8b0fd9648b78f2390.mockapi.io/todo",
+    {
+      cache: "no-store",
+    }
+  );
+  return res.data;
 }
 
 export default async function Todo() {

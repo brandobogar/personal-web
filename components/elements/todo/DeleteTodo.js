@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import axios from "axios";
 
 export default function DeleteTodo(todo) {
   const [modal, setModal] = useState(false);
@@ -14,10 +15,9 @@ export default function DeleteTodo(todo) {
 
   async function handleDelete(todoId) {
     setIsLoading(true);
-    await fetch(`https://64e6fcd8b0fd9648b78f2390.mockapi.io/todo/${todoId}`, {
-      method: "DELETE",
-    });
-
+    await axios.delete(
+      `https://64e6fcd8b0fd9648b78f2390.mockapi.io/todo/${todoId}`
+    );
     setIsLoading(false);
     handleModal();
     router.refresh();
